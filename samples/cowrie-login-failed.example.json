@@ -1,0 +1,14 @@
+{
+  "session": "example-session-id",
+  "protocol": "ssh",
+  "src_ip": "198.51.100.25",
+  "src_port": 53000,
+  "dst_ip": "198.51.100.10",
+  "dst_port": 2222,
+  "username": "labtester",
+  "password": "<redacted-test-password>",
+  "eventid": "cowrie.login.failed",
+  "sensor": "ubuntu-HoneyPot",
+  "timestamp": "2026-11-20T00:00:00.000Z",
+  "message": "login attempt [labtester/<redacted>] failed"
+}

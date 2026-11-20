@@ -1,0 +1,5 @@
+<!-- Merge this element inside the existing <ossec_config> on the Cowrie VM. -->
+<localfile>
+  <location>/home/cowrie/my-honeypot/var/log/cowrie/cowrie.json</location>
+  <log_format>json</log_format>
+</localfile>

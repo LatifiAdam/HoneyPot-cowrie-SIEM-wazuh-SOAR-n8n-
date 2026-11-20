@@ -1,0 +1,68 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials.json
+
+# n8n local data and exports that may contain credentials or internal IDs
+.n8n/
+**/n8n-data/
+**/*credential*.json
+**/*secret*
+
+# Cowrie runtime data and simulated credentials
+var/
+**/var/log/cowrie/
+**/cowrie.json
+**/userdb.txt
+**/authorized_keys
+
+# Wazuh local runtime/logs and generated data
+/var/ossec/logs/
+/var/ossec/queue/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Captures and wordlists
+*.cap
+*.pcap
+rockyou*
+
+# Virtual machine disks and snapshots
+*.vmdk
+*.vdi
+*.qcow2
+*.ova
+*.vmsn
+# Local databases and application state
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.bak
+*.backup
+*.tar
+*.tar.gz
+*.zip
+*.7z
+
+# Wazuh keys / local certificates
+client.keys
+private/
+certs/private/

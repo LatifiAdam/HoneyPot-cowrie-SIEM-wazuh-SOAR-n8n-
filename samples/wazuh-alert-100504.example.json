@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-11-20T00:33:19.812+0000",
+  "rule": {
+    "level": 12,
+    "description": "Cowrie: Five or more failed SSH logins from the same source within 60 seconds.",
+    "id": "100504",
+    "firedtimes": 1,
+    "mail": false,
+    "groups": ["local", "cowrie", "brute_force"]
+  },
+  "agent": {
+    "id": "001",
+    "name": "cowrie-vm",
+    "ip": "198.51.100.10"
+  },
+  "manager": {
+    "name": "wazuh-manager"
+  },
+  "id": "1700000000.000001",
+  "decoder": {
+    "name": "json"
+  },
+  "data": {
+    "session": "example-session-id",
+    "protocol": "ssh",
+    "src_ip": "198.51.100.25",
+    "src_port": 53000,
+    "dst_ip": "198.51.100.10",
+    "dst_port": 2222,
+    "username": "labtester",
+    "password": "<redacted-test-password>",
+    "eventid": "cowrie.login.failed",
+    "sensor": "ubuntu-HoneyPot",
+    "timestamp": "2026-11-20T00:33:19.812Z",
+    "message": "login attempt [labtester/<redacted>] failed"
+  },
+  "location": "/home/cowrie/my-honeypot/var/log/cowrie/cowrie.json"
+}

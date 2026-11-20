@@ -1,0 +1,8 @@
+<!-- Merge this block inside the existing <ossec_config> on the Wazuh Manager. -->
+<integration>
+  <name>custom-n8n</name>
+  <hook_url>http://127.0.0.1:5678/webhook/wazuh-cowrie-alert</hook_url>
+  <api_key>REPLACE_WITH_A_NEW_RANDOM_SECRET</api_key>
+  <level>7</level>
+  <alert_format>json</alert_format>
+</integration>
