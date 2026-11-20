@@ -251,5 +251,5 @@ Linux administration · virtual networking · SSH service testing · honeypot de
 
 ---
 
-**Author:** *Your name*  
+**Author:** Latifi Adam 
 **Project type:** Personal cybersecurity lab / SOC portfolio project
